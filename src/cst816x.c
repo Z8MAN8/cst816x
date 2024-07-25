@@ -89,7 +89,7 @@ static rt_err_t touch_control(struct rt_touch_device *touch, int cmd, void *arg)
 
 static struct rt_touch_ops touch_ops =
     {
-        .touch_readpoint = cst816_read_point,
+        .touch_readpoint = cst816x_read_point,
         .touch_control = touch_control,
 };
 
